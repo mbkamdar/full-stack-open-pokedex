@@ -21,3 +21,9 @@ jobs:
         run: npm run build
       - name: test
         run: npm test
+      - name: heroku deploy
+        uses: ahkileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "appdev-pokedex"
+          heroku_email: appdevlearner@gmail.com
