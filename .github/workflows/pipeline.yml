@@ -29,3 +29,4 @@ jobs:
           heroku_email: appdevlearner@gmail.com
           healthcheck: "https://appdev-pokedex.herokuapp.com/health"
           checkstring: "ok"
+          rollbackonhealthcheckfailed: true
